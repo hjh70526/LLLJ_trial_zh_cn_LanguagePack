@@ -1,0 +1,686 @@
+﻿// ■チャートデータ各種定義
+//	※このファイルは自動生成されたものです！手動での編集はご遠慮ください！
+(const) %[
+	"branches" => (const) [
+	],
+	"captions" => (const) %[
+		"s001*part_001" => (const) [
+			"【PROLOGUE 1】"
+		],
+		"s002*part_002" => (const) [
+			"【PROLOGUE 2】"
+		],
+		"s004*part_004" => (const) [
+			"【CHAPTER 1-1】"
+		],
+		"s005*part_005" => (const) [
+			"【CHAPTER 1-2】"
+		],
+		"s006*chapter1-4" => (const) [
+			"【CHAPTER 1-4】"
+		],
+		"s006*part_006" => (const) [
+			"【CHAPTER1-3】"
+		],
+		"s007*part_007" => (const) [
+			"【CHAPTER 1-5】"
+		],
+		"s007*part_007_sel1" => (const) [
+			"是告诉阳见，还是告诉莉莉子？"
+		],
+		"s007*part_007_sel1_COM" => (const) [
+			"【CHAPTER 1-5】"
+		],
+		"s008*part_008" => (const) [
+			"【CHAPTER 1-6】"
+		],
+		"s010*part_010" => (const) [
+			"【CHAPTER 2-1】"
+		],
+		"s011*chapter2-3" => (const) [
+			"【CHAPTER 2-3】"
+		],
+		"s011*part_011" => (const) [
+			"【CHAPTER 2-2】"
+		],
+		"s012*chapter2-5" => (const) [
+			"【CHAPTER 2-5】"
+		],
+		"s012*part_012" => (const) [
+			"【CHAPTER 2-4】"
+		],
+		"s012*part_012_sel1" => (const) [
+			"【雪鹰】「但是，蛋糕啊……。那家伙喜欢什么来着……?」"
+		],
+		"s012*part_012_sel1_B" => (const) [
+			"【CHAPTER 2-5】"
+		],
+		"s013*part_013" => (const) [
+			"【CHAPTER 2-6】"
+		],
+		"s015*chapter3-2" => (const) [
+			"【CHAPTER 3-2】"
+		],
+		"s015*part_015" => (const) [
+			"【CHAPTER 3-1】"
+		],
+		"s016*chapter3-4" => (const) [
+			"【CHAPTER 3-4】"
+		],
+		"s016*part_016" => (const) [
+			"【CHAPTER 3-3】"
+		],
+		"s016*part_016_sel1" => (const) [
+			"这样下去，打工没问题吗？能好好工作吗……?"
+		],
+		"s016*part_016_sel1_COM" => (const) [
+			"【CHAPTER 3-3】"
+		],
+		"s017*chapter3-6" => (const) [
+			"【CHAPTER 3-6】"
+		],
+		"s017*part_017" => (const) [
+			"【CHAPTER 3-5】"
+		],
+		"s101" => (const) [
+			"ENA\'s route",
+			"恵凪H.ks"
+		],
+		"s101*chapter_enaH" => (const) [
+			"【ENA\'s route】"
+		],
+		"s201" => (const) [
+			"ANJU\'s route",
+			"杏珠H.ks"
+		],
+		"s201*chapter_anjH" => (const) [
+			"【ANJU\'s route】"
+		],
+		"s301" => (const) [
+			"TSUKIMI\'s route",
+			"月望H.ks"
+		],
+		"s301*chapter_tukH" => (const) [
+			"【TSUKIMI\'s route】"
+		],
+		"s401" => (const) [
+			"RIRIKO\'s route",
+			"莉々子H.ks"
+		],
+		"s401*chapter_rirH" => (const) [
+			"【RIRIKO\'s route】"
+		],
+		"s501" => (const) [
+			"MIKU\'s route",
+			"美玖H.ks"
+		],
+		"s501*chapter_mikH" => (const) [
+			"【MIKU\'s route】"
+		],
+		"s601" => (const) [
+			"NAYUKA\'s route",
+			"那優花H.ks"
+		],
+		"s601*chapter_nayH" => (const) [
+			"【NAYUKA\'s route】"
+		]
+	],
+	"chain" => (const) %[
+		"s001*part_001" => "s002*part_002",
+		"s002*part_002" => "s004*part_004",
+		"s004*part_004" => "s005*part_005",
+		"s005*part_005" => "s006*part_006",
+		"s006*chapter1-4" => "s007*part_007",
+		"s006*part_006" => "s006*chapter1-4",
+		"s007*part_007" => "s007*part_007_sel1",
+		"s007*part_007_sel1" => (const) [
+			"s007*part_007_sel1_A",
+			"s007*part_007_sel1_B"
+		],
+		"s007*part_007_sel1:s007*part_007_sel1_A" => (const) [
+			"select",
+			1
+		],
+		"s007*part_007_sel1:s007*part_007_sel1_B" => (const) [
+			"select",
+			2
+		],
+		"s007*part_007_sel1_A" => "s007*part_007_sel1_COM",
+		"s007*part_007_sel1_B" => "s007*part_007_sel1_COM",
+		"s007*part_007_sel1_COM" => "s008*part_008",
+		"s008*part_008" => "s010*part_010",
+		"s010*part_010" => "s011*part_011",
+		"s011*chapter2-3" => "s012*part_012",
+		"s011*part_011" => "s011*chapter2-3",
+		"s012*chapter2-5" => "s012*part_012_sel1",
+		"s012*part_012" => "s012*chapter2-5",
+		"s012*part_012_sel1" => (const) [
+			"s012*part_012_sel1_A",
+			"s012*part_012_sel1_B"
+		],
+		"s012*part_012_sel1:s012*part_012_sel1_A" => (const) [
+			"select",
+			1
+		],
+		"s012*part_012_sel1:s012*part_012_sel1_B" => (const) [
+			"select",
+			2
+		],
+		"s012*part_012_sel1_A" => "s013*part_013",
+		"s012*part_012_sel1_B" => "s013*part_013",
+		"s013*part_013" => "s015*part_015",
+		"s015*chapter3-2" => "s016*part_016",
+		"s015*part_015" => "s015*chapter3-2",
+		"s016*chapter3-4" => "s017*part_017",
+		"s016*part_016" => "s016*part_016_sel1",
+		"s016*part_016_sel1" => (const) [
+			"s016*part_016_sel1_A",
+			"s016*part_016_sel1_B"
+		],
+		"s016*part_016_sel1:s016*part_016_sel1_A" => (const) [
+			"select",
+			1
+		],
+		"s016*part_016_sel1:s016*part_016_sel1_B" => (const) [
+			"select",
+			2
+		],
+		"s016*part_016_sel1_A" => "s016*part_016_sel1_COM",
+		"s016*part_016_sel1_B" => "s016*part_016_sel1_COM",
+		"s016*part_016_sel1_COM" => "s016*chapter3-4",
+		"s017*part_017" => "s017*chapter3-6"
+	],
+	"flagkeys" => (const) [
+		"anj",
+		"ena",
+		"rir",
+		"sel12_flag",
+		"sel16_flag",
+		"tuk"
+	],
+	"flags" => (const) %[
+		"anj" => (const) [
+			(const) [
+				"s016*part_016_sel1",
+				1,
+				1
+			]
+		],
+		"ena" => (const) [
+			(const) [
+				"s007*part_007_sel1",
+				1,
+				1
+			],
+			(const) [
+				"s016*part_016_sel1",
+				2,
+				1
+			]
+		],
+		"rir" => (const) [
+			(const) [
+				"s007*part_007_sel1",
+				2,
+				1
+			],
+			(const) [
+				"s012*part_012_sel1",
+				2,
+				1
+			]
+		],
+		"sel12_flag" => (const) [
+			(const) [
+				"s012*part_012_sel1",
+				1,
+				1
+			],
+			(const) [
+				"s012*part_012_sel1",
+				2,
+				0
+			]
+		],
+		"sel16_flag" => (const) [
+			(const) [
+				"s016*part_016_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s016*part_016_sel1",
+				2,
+				1
+			]
+		],
+		"tuk" => (const) [
+			(const) [
+				"s012*part_012_sel1",
+				1,
+				1
+			]
+		]
+	],
+	"items" => (const) [
+		(const) [
+			(const) %[
+				"id" => "chapter_1_1",
+				"name" => "PROLOGUE / March",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "序章-1",
+				"id" => "s001*part_001",
+				"storage" => "バンド001_03月_プロローグ上（現状）.ks",
+				"tag" => "s001",
+				"target" => "*part_001",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "序章-2",
+				"id" => "s002*part_002",
+				"storage" => "バンド002_03月_プロローグ下（ライブ）.ks",
+				"tag" => "s002",
+				"target" => "*part_002",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_1_2",
+				"name" => "CHAPTER 1 / April",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "CHAPTER 1-1",
+				"id" => "s004*part_004",
+				"storage" => "バンド004_04月（再会）.ks",
+				"tag" => "s004",
+				"target" => "*part_004",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "CHAPTER 1-2",
+				"id" => "s005*part_005",
+				"storage" => "バンド005_04月（学生会）.ks",
+				"tag" => "s005",
+				"target" => "*part_005",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "CHAPTER 1-3",
+				"id" => "s006*part_006",
+				"storage" => "バンド006_04月（本番に向けて）.ks",
+				"tag" => "s006",
+				"target" => "*part_006",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "CHAPTER 1-4",
+				"id" => "s006*chapter1-4",
+				"storage" => "バンド006_04月（本番に向けて）.ks",
+				"tag" => "s006",
+				"target" => "*chapter1-4",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "CHAPTER 1-5",
+				"id" => "s007*part_007",
+				"storage" => "バンド007_04月（ゲリラライブ）.ks",
+				"tag" => "s007",
+				"target" => "*part_007",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "向谁报告？",
+				"id" => "s007*part_007_sel1",
+				"selects" => (const) [
+					"阳见",
+					1,
+					"莉莉子",
+					2
+				],
+				"storage" => "バンド007_04月（ゲリラライブ）.ks",
+				"tag" => "s007",
+				"target" => "*part_007_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "向阳见报告",
+				"id" => "s007*part_007_sel1_A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "バンド007_04月（ゲリラライブ）.ks",
+				"tag" => "s007",
+				"target" => "*part_007_sel1_A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "向莉莉子报告",
+				"id" => "s007*part_007_sel1_B",
+				"shape" => "subsection",
+				"storage" => "バンド007_04月（ゲリラライブ）.ks",
+				"tag" => "s007",
+				"target" => "*part_007_sel1_B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "社团介绍",
+				"id" => "s007*part_007_sel1_COM",
+				"preofs" => 50,
+				"storage" => "バンド007_04月（ゲリラライブ）.ks",
+				"tag" => "s007",
+				"target" => "*part_007_sel1_COM",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "CHAPTER 1-6",
+				"id" => "s008*part_008",
+				"storage" => "バンド008_04月（メンバー探し）.ks",
+				"tag" => "s008",
+				"target" => "*part_008",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_1_3",
+				"name" => "CHAPTER 2 / May",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "CHAPTER 2-1",
+				"id" => "s010*part_010",
+				"storage" => "バンド010_05月（メンバー希望）.ks",
+				"tag" => "s010",
+				"target" => "*part_010",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "CHAPTER 2-2",
+				"id" => "s011*part_011",
+				"storage" => "バンド011_05月（オーディション）.ks",
+				"tag" => "s011",
+				"target" => "*part_011",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "CHAPTER 2-3",
+				"id" => "s011*chapter2-3",
+				"storage" => "バンド011_05月（オーディション）.ks",
+				"tag" => "s011",
+				"target" => "*chapter2-3",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "CHAPTER 2-4",
+				"id" => "s012*part_012",
+				"storage" => "バンド012_05月（作曲）.ks",
+				"tag" => "s012",
+				"target" => "*part_012",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "CHAPTER 2-5",
+				"id" => "s012*chapter2-5",
+				"storage" => "バンド012_05月（作曲）.ks",
+				"tag" => "s012",
+				"target" => "*chapter2-5",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "莉莉子喜欢什么？",
+				"id" => "s012*part_012_sel1",
+				"selects" => (const) [
+					"自己找",
+					1,
+					"问本人",
+					2
+				],
+				"storage" => "バンド012_05月（作曲）.ks",
+				"tag" => "s012",
+				"target" => "*part_012_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "自己找",
+				"id" => "s012*part_012_sel1_A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "バンド012_05月（作曲）.ks",
+				"tag" => "s012",
+				"target" => "*part_012_sel1_A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "问本人",
+				"id" => "s012*part_012_sel1_B",
+				"shape" => "subsection",
+				"storage" => "バンド012_05月（作曲）.ks",
+				"tag" => "s012",
+				"target" => "*part_012_sel1_B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "CHAPTER 2-6",
+				"id" => "s013*part_013",
+				"preofs" => 50,
+				"storage" => "バンド013_05月（全否定）.ks",
+				"tag" => "s013",
+				"target" => "*part_013",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_1_4",
+				"name" => "CHAPTER 3 / June",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "CHAPTER 3-1",
+				"id" => "s015*part_015",
+				"storage" => "バンド015_06月（襲来）.ks",
+				"tag" => "s015",
+				"target" => "*part_015",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "CHAPTER 3-2",
+				"id" => "s015*chapter3-2",
+				"storage" => "バンド015_06月（襲来）.ks",
+				"tag" => "s015",
+				"target" => "*chapter3-2",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "CHAPTER 3-3",
+				"id" => "s016*part_016",
+				"storage" => "バンド016_06月（リトライ）.ks",
+				"tag" => "s016",
+				"target" => "*part_016",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "极限……?",
+				"id" => "s016*part_016_sel1",
+				"selects" => (const) [
+					"寻求帮助",
+					1,
+					"自己干到最后",
+					2
+				],
+				"storage" => "バンド016_06月（リトライ）.ks",
+				"tag" => "s016",
+				"target" => "*part_016_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "寻求帮助",
+				"id" => "s016*part_016_sel1_A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "バンド016_06月（リトライ）.ks",
+				"tag" => "s016",
+				"target" => "*part_016_sel1_A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "自己做",
+				"id" => "s016*part_016_sel1_B",
+				"shape" => "subsection",
+				"storage" => "バンド016_06月（リトライ）.ks",
+				"tag" => "s016",
+				"target" => "*part_016_sel1_B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "惠凪送来的慰问品",
+				"id" => "s016*part_016_sel1_COM",
+				"preofs" => 50,
+				"storage" => "バンド016_06月（リトライ）.ks",
+				"tag" => "s016",
+				"target" => "*part_016_sel1_COM",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "CHAPTER 3-4",
+				"id" => "s016*chapter3-4",
+				"storage" => "バンド016_06月（リトライ）.ks",
+				"tag" => "s016",
+				"target" => "*chapter3-4",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "CHAPTER 3-5",
+				"id" => "s017*part_017",
+				"storage" => "バンド017_06月（初ライブ）.ks",
+				"tag" => "s017",
+				"target" => "*part_017",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "CHAPTER 3-6",
+				"id" => "s017*chapter3-6",
+				"storage" => "バンド017_06月（初ライブ）.ks",
+				"tag" => "s017",
+				"target" => "*chapter3-6",
+				"type" => "section"
+			]
+		],
+		(const) [
+			(const) %[
+				"id" => "chapter_2_1",
+				"name" => "ENA\'s route",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "和惠凪…",
+				"id" => "s101*chapter_enaH",
+				"storage" => "恵凪H.ks",
+				"tag" => "s101",
+				"target" => "*chapter_enaH",
+				"type" => "section"
+			]
+		],
+		(const) [
+			(const) %[
+				"id" => "chapter_3_1",
+				"name" => "ANJU\'s route",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "和杏珠…",
+				"id" => "s201*chapter_anjH",
+				"storage" => "杏珠H.ks",
+				"tag" => "s201",
+				"target" => "*chapter_anjH",
+				"type" => "section"
+			]
+		],
+		(const) [
+			(const) %[
+				"id" => "chapter_4_1",
+				"name" => "TSUKIMI\'s route",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "和月望…",
+				"id" => "s301*chapter_tukH",
+				"storage" => "月望H.ks",
+				"tag" => "s301",
+				"target" => "*chapter_tukH",
+				"type" => "section"
+			]
+		],
+		(const) [
+			(const) %[
+				"id" => "chapter_5_1",
+				"name" => "RIRIKO\'s route",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "和莉莉子…",
+				"id" => "s401*chapter_rirH",
+				"storage" => "莉々子H.ks",
+				"tag" => "s401",
+				"target" => "*chapter_rirH",
+				"type" => "section"
+			]
+		],
+		(const) [
+			(const) %[
+				"id" => "chapter_6_1",
+				"name" => "MIKU\'s route",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "和美玖…",
+				"id" => "s501*chapter_mikH",
+				"storage" => "美玖H.ks",
+				"tag" => "s501",
+				"target" => "*chapter_mikH",
+				"type" => "section"
+			]
+		],
+		(const) [
+			(const) %[
+				"id" => "chapter_7_1",
+				"name" => "NAYUKA\'s route",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "和那优花…",
+				"id" => "s601*chapter_nayH",
+				"storage" => "那優花H.ks",
+				"tag" => "s601",
+				"target" => "*chapter_nayH",
+				"type" => "section"
+			]
+		]
+	],
+	"routes" => (const) [
+		"共通",
+		"惠凪",
+		"杏珠",
+		"月望",
+		"莉莉子",
+		"美玖",
+		"那优花"
+	],
+	"selects" => (const) [
+		"s007*part_007_sel1",
+		"s012*part_012_sel1",
+		"s016*part_016_sel1"
+	]
+]
